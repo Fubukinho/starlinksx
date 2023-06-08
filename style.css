@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* BACKGROUND - IMG */
+
+.bck {
+    background-color: black;
+    background-image: url(https://cdn.pixabay.com/photo/2020/12/09/13/21/radio-telescope-5817469_1280.jpg);
+    height: 990px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*HEADER KK CSS*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 4rem;
+}
+
+.logo .logo-starlink{
+    width: 155px;
+    margin-top: 2.7rem;
+}
+
+.logo .menu-hambg {
+    position: absolute;
+    right: 4.8%;
+    cursor: pointer;
+    top: 6.9%;
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+    margin-top: 2.7rem;
+}
+
+.navigation .border-residencial {
+    padding-bottom: 1px;
+    border-bottom: 0.3px solid rgb(255, 255, 255);
+}
+
+.navigation li  {
+    cursor: pointer;
+}
+
+.navigation li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* MAIN DA PAGINA KKKKK */
+
+main .content {
+    text-align: center;
+    margin-top: 3.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content img {
+    width: 110px;
+    display: none;
+}
+
+.content h1 {
+    color: white;
+    font-size: 2.938rem;
+}
+
+.content .oferta-txt {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.content .equipamento {
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.spn-aq {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.content h2 {
+    color: white;
+    font-size: 36px;
+    margin-top: -8px;
+}
+
+.content .reducao {
+    color: white;
+    font-size: 18px;
+}
+
+.content p {
+    margin-top: 30px;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* BUTTON PEDIR AGORA E O INPUT AO LADO */
+
+.content .input {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 12.5rem;
+    align-items: center;
+}
+
+.content .input input {
+    height: 50px;
+    max-width: 440px;
+    border-radius: 4px;
+    background-color: rgba(176, 176, 176, 0.278);
+    border: none;
+    width: 100%;
+    padding-left: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.600);;
+}
+
+.content .input input::placeholder{
+    color: rgba(255, 255, 255, 0.600);
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content .input button {
+    height: 51px;
+    border: none;
+    border-radius: 4px;
+    max-width: 186px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color:#888888;
+}
+
+.content .mapa {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.content .termos {
+    color:#dcdada;
+    font-size: 10px;
+    margin-top: 17px;
+}
+
+.politica-spn {
+    text-decoration: underline;
+    color: white;
+}
+
+@media screen and (max-width: 1300px){
+
+    .navigation {
+        display: none;
+    }
+
+    .logo .menu-hambg {
+        display: block;
+    }
+
+    .content img {
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .logo .logo-starlink {
+        display: none;
+    }
+
+    main .content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content .input button {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .content h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .content h1 {
+        font-size: 47px;
+    }
+}
+
+@media screen and (max-width: 395px){
+    .content h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 487px) {
+    .content .input input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 487px) {
+    .content .input input {
+        width: 100%;
+    }
+}
+
